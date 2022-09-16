@@ -8,3 +8,6 @@ Proyecto de node con conexion a mysql
 * para ver con ejecucion el log en consola  se usa node dist/app.js o nodemont dist/app.js
 
 ### En la carpeta dump esta el file para mysql, la conexion se cambia en el archivo NodeMysql/db/connection.ts 
+
+
+### En la carpeta dump esta el colection del postman
