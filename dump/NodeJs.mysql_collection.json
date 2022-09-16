@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "31330bc9-970d-4fa7-82d0-2b3e60e7cffd",
+		"name": "NodeJs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7589309"
+	},
+	"item": [
+		{
+			"name": "ApiMysql",
+			"item": [
+				{
+					"name": "GetList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dominio}}:{{puerto}}/api/usuarios",
+							"host": [
+								"{{dominio}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"api",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Isaias2\",\n    \"email\": \"isaias2@isaias.test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dominio}}:{{puerto}}/api/usuarios",
+							"host": [
+								"{{dominio}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"api",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Isaias22\",\n    \"email\": \"isaias22@isaias.test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dominio}}:{{puerto}}/api/usuarios/3",
+							"host": [
+								"{{dominio}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"api",
+								"usuarios",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dominio}}:{{puerto}}/api/usuarios/3",
+							"host": [
+								"{{dominio}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"api",
+								"usuarios",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "dominio",
+			"value": "localhost",
+			"type": "string"
+		},
+		{
+			"key": "puerto",
+			"value": "8000",
+			"type": "string"
+		}
+	]
+}
